@@ -13,6 +13,10 @@ LABEL maintainer "Kieran Jacobsen <code@poshsecurity.com>"
 
 WORKDIR /app
 
+RUN apk --no-cache update 
+
+RUN apk --no-cache upgrade
+
 RUN apk --no-cache add \
 	ca-certificates \
 	curl 
