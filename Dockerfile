@@ -31,4 +31,4 @@ RUN curl -L https://c2.hak5.org/download/community --output c2.zip \
 
 EXPOSE 2022 8080
 
-#ENTRYPOINT ["/app/cloudc2"]
+ENTRYPOINT ["/app/cloudc2"]
