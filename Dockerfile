@@ -19,6 +19,8 @@ RUN apk --no-cache upgrade
 
 RUN apk --no-cache add musl-utils=1.2.2-r1 --repository=https://dl-cdn.alpinelinux.org/alpine/edge/main
 
+RUN apk --no-cache add musl=1.2.2-r1 --repository=https://dl-cdn.alpinelinux.org/alpine/edge/main
+
 RUN apk --no-cache add \
 	ca-certificates \
 	curl 
