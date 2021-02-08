@@ -17,6 +17,8 @@ RUN apk --no-cache update
 
 RUN apk --no-cache upgrade
 
+RUN apk --no-cache add musl-utils=1.2.2-r1 --repository=https://dl-cdn.alpinelinux.org/alpine/edge/main
+
 RUN apk --no-cache add \
 	ca-certificates \
 	curl 
@@ -27,4 +29,4 @@ RUN curl -L https://c2.hak5.org/download/community --output c2.zip \
 
 EXPOSE 2022 8080
 
-ENTRYPOINT ["/app/cloudc2"]
+#ENTRYPOINT ["/app/cloudc2"]
