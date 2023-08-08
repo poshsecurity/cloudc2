@@ -8,7 +8,7 @@
 # 	poshsecurity/cloudc2 \
 #	-hostname server.local
 
-FROM alpine:latest
+FROM alpine:3.18.3
 LABEL maintainer "Kieran Jacobsen <code@poshsecurity.com>"
 
 WORKDIR /app
